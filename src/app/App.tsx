@@ -5,11 +5,10 @@ import {
     Routes,
 } from 'react-router-dom';
 import './styles/index.scss';
-import { classNames } from './helpers/classNames';
-import { AboutPageAsync } from './pages/AboutPage/AboutPage.async';
-import { MainPageAsync } from './pages/MainPage/MainPage.async.';
-
-import { useTheme } from './theme/useTheme';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useTheme } from 'app/providers/ThemeProvider';
+import { AboutPage } from 'pages/AboutPage';
+import { MainPage } from 'pages/MainPage';
 
 const App = () => {
 
@@ -19,7 +18,6 @@ const App = () => {
     } = useTheme();
 
     return (
-        // <div className={`app ${theme}`}>
         <div className={classNames('app',
             {},
             [theme],
@@ -36,11 +34,11 @@ const App = () => {
                 <Routes>
                     <Route
                         path={'/'}
-                        element={<MainPageAsync />}
+                        element={<MainPage />}
                     />
                     <Route
                         path={'/about'}
-                        element={<AboutPageAsync />}
+                        element={<AboutPage />}
                     />
                 </Routes>
             </Suspense>

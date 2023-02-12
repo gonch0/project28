@@ -9,8 +9,12 @@
         "allowJs": true,
         "moduleResolution": "node",
         // use import
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./src/*"]
+        },
         "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
+        "allowSyntheticDefaultImports": true
     },
     "ts-node": {
         "compilerOptions": {
