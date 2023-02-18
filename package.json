@@ -1,7 +1,7 @@
 {
     "name": "production-project",
     "version": "1.0.0",
-    "description": "",
+    "description": "nvm use 17.4.0",
     "main": "index.js",
     "scripts": {
         "start": "webpack serve --env port=3000",
