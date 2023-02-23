@@ -1,6 +1,7 @@
 import AppRouter from 'app/providers/router/ui/AppRouter';
-import React from 'react';
+import React, { Suspense } from 'react';
 import './styles/index.scss';
+import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import Navbar from 'widgets/Navbar/ui/Navbar';
@@ -18,11 +19,14 @@ const App = () => {
                 [theme],
             )}
         >
-            <Navbar />
-            <div className='content-page'>
-                <Sidebar />
-                <AppRouter />
-            </div>
+            <Suspense fallback=''>
+                <Navbar />
+                {/*<Component />*/}
+                <div className='content-page'>
+                    <Sidebar />
+                    <AppRouter />
+                </div>
+            </Suspense>
         </div>
     );
 };
