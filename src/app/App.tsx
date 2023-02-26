@@ -1,14 +1,14 @@
 import AppRouter from 'app/providers/router/ui/AppRouter';
 import React, { Suspense } from 'react';
 import './styles/index.scss';
-import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import Navbar from 'widgets/Navbar/ui/Navbar';
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
 
-const App = () => {
 
+
+const App = () => {
     const { theme } = useTheme();
 
     return (
@@ -21,7 +21,6 @@ const App = () => {
         >
             <Suspense fallback=''>
                 <Navbar />
-                {/*<Component />*/}
                 <div className='content-page'>
                     <Sidebar />
                     <AppRouter />
