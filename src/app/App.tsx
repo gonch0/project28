@@ -19,6 +19,7 @@ const App = () => {
         >
             <Suspense fallback=''>
                 <Navbar />
+                jhgoi
                 <div className='content-page'>
                     <Sidebar />
                     <AppRouter />
