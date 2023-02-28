@@ -1,5 +1,7 @@
 import AppRouter from 'app/providers/router/ui/AppRouter';
-import React, { Suspense } from 'react';
+import React, {
+    Suspense,
+} from 'react';
 import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
@@ -19,7 +21,6 @@ const App = () => {
         >
             <Suspense fallback=''>
                 <Navbar />
-                jhgoi
                 <div className='content-page'>
                     <Sidebar />
                     <AppRouter />
