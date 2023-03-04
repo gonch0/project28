@@ -11,7 +11,9 @@
         // use import
         "baseUrl": ".",
         "paths": {
-            "*": ["./src/*"]
+            "*": [
+                "./src/*"
+            ]
         },
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true
@@ -20,5 +22,8 @@
         "compilerOptions": {
             "module": "CommonJS"
         }
-    }
+    },
+//    "include": [
+//        "./config/jest/setupTests.ts"
+//    ],
 }
