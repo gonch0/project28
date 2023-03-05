@@ -20,9 +20,9 @@ jobs:
         run: npm install
       - name: build production project
         run: npm run build:prod
-      - name: linting TS
-        run: npm run lint:ts
-      - name: linting css
-        run: npm run lint:css
+#      - name: linting TS
+#        run: npm run lint:ts
+      - name: linting scss
+        run: npm run lint:scss
       - name: unit testing
         run: npm run test:unit

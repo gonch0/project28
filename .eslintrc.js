@@ -1,24 +1,25 @@
 module.exports = {
-    root: true,
     env: {
         browser: true,
-        es6: true,
+        es2021: true,
         jest: true,
     },
     globals: {
-        Promise: true,
-        DEVELOPMENT: true,
+        __IS_DEV__: true,
     },
+    parser: '@typescript-eslint/parser',
     parserOptions: {
-        sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
-            modules: true,
-            legacyDecorators: true,
         },
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        project: ['./tsconfig.json'],
+        tsconfigRootDir: __dirname,
     },
     plugins: [
         'react',
+        '@typescript-eslint',
     ],
     rules: {
         'array-callback-return': 'off',
