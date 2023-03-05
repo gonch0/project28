@@ -30,9 +30,15 @@ module.exports = {
                 SwitchCase: 1,
             },
         ],
-        'react/jsx-indent': ['error', 4],
+        'react/jsx-indent': [
+            'error',
+            4,
+        ],
         'react/button-has-type': 'off',
-        'react/jsx-indent-props': ['error', 4],
+        'react/jsx-indent-props': [
+            'error',
+            4,
+        ],
         'import/extensions': 'off',
         'import/prefer-default-export': 'off',
         'object-shorthand': 'off',
@@ -145,6 +151,12 @@ module.exports = {
                         ignoreTemplateLiterals: true,
                     },
                 ],
+            },
+        },
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
             },
         },
     ],
