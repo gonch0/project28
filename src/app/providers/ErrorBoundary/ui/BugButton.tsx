@@ -4,7 +4,7 @@ import React, {
 } from 'react';
 import {
     Button,
-    ThemeButton,
+    ButtonTheme,
 } from 'shared/ui/Button/Button';
 
 export const BugButton = () => {
@@ -20,7 +20,7 @@ export const BugButton = () => {
 
     return (
         <Button
-            theme={ThemeButton.CLEAR}
+            theme={ButtonTheme.CLEAR}
             onClick={onThrow}
         >
             throw error

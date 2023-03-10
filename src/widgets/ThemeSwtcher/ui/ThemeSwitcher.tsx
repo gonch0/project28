@@ -6,7 +6,7 @@ import React from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import {
     Button,
-    ThemeButton,
+    ButtonTheme,
 } from 'shared/ui/Button/Button';
 import DarkIcon from '../../../shared/assets/icons/theme-dark.svg';
 import LightIcon from '../../../shared/assets/icons/theme-light.svg';
@@ -23,7 +23,7 @@ export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
 
     return (
         <Button
-            theme={ThemeButton.CLEAR}
+            theme={ButtonTheme.CLEAR}
             className={classNames('', {}, [className])}
             onClick={toggleTheme}
         >

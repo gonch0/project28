@@ -1,8 +1,8 @@
 {
-  "toggle": "toggle",
   "Главная страница": "Main page",
   "О сайте": "About",
   "Обновить страницу": "Reload page",
+  "Переключить": "Toggle",
   "Произошла ошибка": "An error",
   "Страница не найдена": "Page not found",
   "Язык": "Lang"
