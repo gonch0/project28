@@ -2,6 +2,10 @@
 @import "themes/normal";
 @import "themes/dark";
 
+body {
+    margin: 0;
+}
+
 .app {
     font: var(--font-m);
     background: var(--bg-color);
