@@ -8,9 +8,13 @@ import {
 
 interface LangSwitcherProps {
     className?: string;
+    short?: boolean;
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({
+    className,
+    short,
+}: LangSwitcherProps) => {
 
     const {
         t,
@@ -29,7 +33,9 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
             theme={ButtonTheme.CLEAR}
             onClick={toggle}
         >
-            {t('Язык')}
+            {t(short
+                ? 'Язык (коротко)'
+                : 'Язык')}
         </Button>
     );
 };
