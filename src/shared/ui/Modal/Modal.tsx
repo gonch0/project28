@@ -26,7 +26,6 @@ export const Modal = ({
 
     const [isClosing, setIsClosing] = useState(false);
     const timeRef = useRef<ReturnType<typeof setTimeout>>();
-    // TODO remove
     const { theme } = useTheme();
 
     const closeHandler = useCallback(() => {
