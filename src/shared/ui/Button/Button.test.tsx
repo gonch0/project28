@@ -16,6 +16,5 @@ describe('Button', () => {
     test('toBeInTheDocument 2', () => {
         render(<Button theme={ButtonTheme.CLEAR}>TEST</Button>);
         expect(screen.getByText('TEST')).toBeInTheDocument();
-        screen.debug();
     });
 });
