@@ -17,10 +17,12 @@ export const LoginForm = ({ className }: LoginFormProps) => {
             <Input
                 type='text'
                 className={cls.input}
+                placeholder={t('Введите username')}
             />
             <Input
                 type='text'
                 className={cls.input}
+                placeholder={t('Введите пароль')}
             />
             <Button className={cls.loginBtn}>
                 {t('Войти')}
