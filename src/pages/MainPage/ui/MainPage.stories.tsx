@@ -1,13 +1,10 @@
+import React from 'react';
 import {
     ComponentMeta,
     ComponentStory,
 } from '@storybook/react';
-import { Theme } from 'app/providers/ThemeProvider';
-
-import 'app/styles/index.scss';
-import React from 'react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-
+import { Theme } from 'app/providers/ThemeProvider';
 import MainPage from './MainPage';
 
 export default {
@@ -16,12 +13,9 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-    args: {
-        to: '/',
-    },
 } as ComponentMeta<typeof MainPage>;
 
-const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...args as {}} />;
+const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
