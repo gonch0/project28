@@ -3,6 +3,7 @@ import React, {
     ReactNode,
     Suspense,
 } from 'react';
+import { Loader } from 'shared/ui/Loader/Loader';
 import { PageError } from 'widgets/PageError';
 
 interface ErrorBoundaryProps {
@@ -32,7 +33,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
         const { children } = this.props;
 
         if (hasError) {
-            return <Suspense fallback=''>
+            return <Suspense fallback={<Loader />}>
                 <PageError />
             </Suspense>;
         }

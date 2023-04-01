@@ -38,7 +38,7 @@ AuthNavbar.decorators = [
         user: {
             authData: {
                 id: '1',
-                username: 'user',
+                username: 'sf',
             },
         },
     }),
