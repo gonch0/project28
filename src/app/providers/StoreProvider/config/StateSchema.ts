@@ -10,8 +10,8 @@ import { UserSchema } from 'entites/User';
 import { LoginSchema } from 'features/AuthByUsername';
 
 export interface StateSchema {
-    counter: CounterSchema;
-    user: UserSchema;
+    counter?: CounterSchema;
+    user?: UserSchema;
 
     // async reducers
     loginForm?: LoginSchema;
