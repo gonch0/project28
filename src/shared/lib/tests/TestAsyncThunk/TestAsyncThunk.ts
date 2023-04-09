@@ -16,10 +16,9 @@ export class TestAsyncThunk<Return, Arg, RejectedValue> {
     }
 
     async callThunk(arg: Arg) {
-        const action = this.actionCreator({
-            username: '123',
-            password: '123',
-        });
-        const result = await action(dispatch, getState, undefined);
+        const action = this.actionCreator(arg);
+        const result = await action(this.dispatch, this.getState, undefined);
+
+        return result;
     }
 }
